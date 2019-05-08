@@ -5,3 +5,7 @@
 * [GeeksforGeek](https://www.geeksforgeeks.org/) geeksforgeeks 有各種語言和演算法的教學網站
 
 * [mycodeschool](https://www.youtube.com/channel/UClEEsT7DkdVO_fkrBw0OTrA) 外國網友推薦的資料結構學習頻道
+
+* [trekhleb/javascript-algorithms](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/tree)  JS演算法實作與圖片講解
+
+* [初學者寫給初學者的演算法教學](http://alrightchiu.github.io/SecondRound/)
