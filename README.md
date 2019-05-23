@@ -9,3 +9,5 @@
 * [trekhleb/javascript-algorithms](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/tree)  JS演算法實作與圖片講解
 
 * [初學者寫給初學者的演算法教學](http://alrightchiu.github.io/SecondRound/)
+
+＊[以Python實作資料結構](https://super9.space/archives/1105)
