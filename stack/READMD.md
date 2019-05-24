@@ -7,3 +7,8 @@ stack為後進先出,Last in first out
 * isEmpty()，isEmpty: Returns true if stack is empty, else false
 
 array版本可先設定滿為10，滿也是一個邊界條件
+
+array實作參考文章
+* [C infinite loop when char input instead of int](https://stackoverflow.com/questions/53056369/c-infinite-loop-when-char-input-instead-of-int)
+
+* [Implementation of Stack Using Array in C](https://www.programming9.com/programs/c-programs/302-implementation-of-stack-using-array-in-c)
