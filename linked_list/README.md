@@ -54,3 +54,5 @@ num = 22
 ### 參考資料
 * [單向鏈結串列 Singly Linked List](https://hackersir.gitbooks.io/c/content/Ch11/02_Singly_Linked_List_forC.html)
 * [JS 資料結構 linked-list](https://medium.com/@nicehorse06/javascript-algorithms-linked-list-b0f80e49a5c6)
+* [C語言 鏈結串列(link list)的實作範例](https://lakesd6531.pixnet.net/blog/post/329288496-c%E8%AA%9E%E8%A8%80-%E9%8F%88%E7%B5%90%E4%B8%B2%E5%88%97(link-list)%E7%9A%84%E5%AF%A6%E4%BD%9C%E7%AF%84%E4%BE%8B)
+* [[C 語言] 程式設計教學：如何使用結構 (Struct)]()
