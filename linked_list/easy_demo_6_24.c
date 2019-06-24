@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// 此範例為靜態編譯來配置空間，也就是編譯時就已經配置好空間給每一個節點
+// 此配置有些許不便，同一節點不用時，無法回收其佔去的記憶體
+// 動態配置需用malloc()
+
 struct node
 {
 	int data;
