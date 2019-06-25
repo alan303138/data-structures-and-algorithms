@@ -2,10 +2,12 @@
 
 ## 疑問
 * ?? head == NULL 和 head -> next == NULL 是一樣意思嗎?
-* 指標指向一個定值是實麼意思
+    * `head == NULL` 表head指標所指向的位置為空，`head -> next == NULL`表head指標所指向的位置有值，其struct的next指向的位址為空
+* 指標指向一個定值是什麼意思
+    * 該位置所指向的值為定值
 ```
-int * num = 0;
-num = 22
+int * num = 0; // 此時表把位置0放到位址變數num中
+num = 22 //此時表把位置22放到num中，非數字
 ```
 
 ## linked list特性
@@ -50,9 +52,14 @@ num = 22
 2. Dynamic memory allocation and pointers are required, which complicates the code and increases the risk of memory leaks and segment faults.
 3. Linked lists have a much larger overhead over arrays, since linked list items are dynamically allocated (which is less efficient in memory usage) and each item in the list also must store an additional pointer.
 
+## 範例簡介
+* singly_linked_list.c 為初始的練習範例，尚不熟其指標流程和struct用法
+* easy_demo_6_24.c 為簡易的demo，宣告Node後，靜態的宣告三個Node並把三者串在一起
+* easy_malloc_demo_6_24.c 為簡易的malloc demo，宣告Node後，依據輸入的長度，動態的產生該長度的linked list
 
 ### 參考資料
 * [單向鏈結串列 Singly Linked List](https://hackersir.gitbooks.io/c/content/Ch11/02_Singly_Linked_List_forC.html)
 * [JS 資料結構 linked-list](https://medium.com/@nicehorse06/javascript-algorithms-linked-list-b0f80e49a5c6)
-* [C語言 鏈結串列(link list)的實作範例](https://lakesd6531.pixnet.net/blog/post/329288496-c%E8%AA%9E%E8%A8%80-%E9%8F%88%E7%B5%90%E4%B8%B2%E5%88%97(link-list)%E7%9A%84%E5%AF%A6%E4%BD%9C%E7%AF%84%E4%BE%8B)
-* [[C 語言] 程式設計教學：如何使用結構 (Struct)]()
+* [C語言 鏈結串列(link list)的實作範例](https://lakesd6531.pixnet.net/blog/post/329288496-c%E8%AA%9E%E8%A8%80-%E9%8F%88%E7%B5%90%E4%B8%B2%E5%88%97(link-list)%E7%9A%84%E5%AF%A6%E4%BD%9C%E7%AF%84%E4%BE%8B) 非常實用的範例
+
+* [[C 語言] 程式設計教學：如何使用結構 (Struct)](https://michaelchen.tech/c-prog/struct/)
