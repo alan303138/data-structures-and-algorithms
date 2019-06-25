@@ -52,7 +52,7 @@ int main()
 		}
 		else if (choice == 2)
 		{
-			printf("hello world\n");
+			printf("add data is todo...\n");
 		}
 		else if (choice == 3)
 		{
