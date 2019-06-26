@@ -56,6 +56,7 @@ num = 22 //此時表把位置22放到num中，非數字
 * singly_linked_list.c 為初始的練習範例，尚不熟其指標流程和struct用法
 * easy_demo_6_24.c 為簡易的demo，宣告Node後，靜態的宣告三個Node並把三者串在一起
 * easy_malloc_demo_6_24.c 為簡易的malloc demo，宣告Node後，依據輸入的長度，動態的產生該長度的linked list
+* demo_6_26.c 有完成、清楚的 CRUD demo
 
 ### 參考資料
 * [單向鏈結串列 Singly Linked List](https://hackersir.gitbooks.io/c/content/Ch11/02_Singly_Linked_List_forC.html)
