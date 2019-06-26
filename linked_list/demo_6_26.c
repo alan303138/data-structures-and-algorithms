@@ -10,17 +10,31 @@ struct node{
 };
 typedef struct node Node;
 
-Node *createList(int*, int); //create list
-void printList(Node *); //print list
+Node *createList(int*, int); // create list
+void printList(Node *); // print list
 void freeList(Node *); // free list memory
+Node *searchNode(Node *, int); // search node
+void insertNode(Node *, int); // insert one node
 
 int main(){
-	Node *first;
-	int arr[]={14, 27, 15, 55};
-	first=createList(arr, 4);
+	// first part
+	Node *first, *node;
+	int arr_1[]={14, 27, 15, 55}, arr_2[]={12, 38, 57};
+	first=createList(arr_1, 4);
+	printf("Show the arr_1:\n");
 	printList(first);
 	freeList(first);
 
+	first = createList(arr_2, 3);
+	printf("Show the arr_2:\n");
+	printList(first);
+
+	node = searchNode(first, 38); //search data 38 address
+	insertNode(node, 46); // insert data 46 after 38
+	printf("add value 46 to arr_2 become:\n");
+	printList(first);
+	freeList(first);
+	
 	return 0;
 }
 
@@ -63,4 +77,26 @@ void freeList(Node *first){
 		current=current->next;
 		free(tmp);
 	}
+}
+
+// search node which data is item
+Node *searchNode(Node *first, int item){
+	Node *node=first;
+	while(node != NULL){
+		if(node->data == item){
+			return node;
+		}else{
+			node = node ->next;
+		}
+	}
+	return NULL;
+}
+
+// 塞入一個新的node在一個指定的node後面
+void insertNode(Node *node, int item){
+	Node *newnode;
+	newnode = (Node *)malloc(sizeof(Node));
+	newnode->data = item;
+	newnode->next = node->next;
+	node->next = newnode;
 }
