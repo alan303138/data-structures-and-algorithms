@@ -58,6 +58,15 @@ num = 22 //此時表把位置22放到num中，非數字
 * easy_malloc_demo_6_24.c 為簡易的malloc demo，宣告Node後，依據輸入的長度，動態的產生該長度的linked list
 * demo_6_26.c 有完成、清楚的 CRUD demo
 
+
+### demo撰寫順序
+* include 基本資料
+* 定義 node
+* 建立 main
+* 建立 printList
+    * 建立printList的測試
+* 建立 createList
+
 ### 參考資料
 * [單向鏈結串列 Singly Linked List](https://hackersir.gitbooks.io/c/content/Ch11/02_Singly_Linked_List_forC.html)
 * [JS 資料結構 linked-list](https://medium.com/@nicehorse06/javascript-algorithms-linked-list-b0f80e49a5c6)
