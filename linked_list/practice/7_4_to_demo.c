@@ -27,10 +27,10 @@ int main()
 
 	first->data = 0;
 	first->next = NULL;
-	node->data = 1;
-	node->next = NULL;
+	// node->data = 1;
+	// node->next = NULL;
 
-	// printList(first);
+	printList(first);
 	return 0;
 }
 
