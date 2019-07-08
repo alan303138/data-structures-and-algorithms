@@ -11,7 +11,9 @@ typedef struct node Node;
 // 帶入第一項，列印出整個串列
 void printList(Node *);
 // 帶入第一項，在尾項加一個node
-Node *addNewNode(Node *, int);
+Node *addLastNode(Node *, int);
+
+Node *deleteLastNode(Node *);
 
 int main()
 {
@@ -28,7 +30,9 @@ int main()
 	c.data = 50;
 	c.next = NULL;
 	printList(first);
-	first = addNewNode(first, 1);
+	first = addLastNode(first, 1);
+	printList(first);
+	first = deleteLastNode(first);
 	printList(first);
 	return 0;
 }
@@ -51,8 +55,7 @@ void printList(Node *first)
 	}
 }
 
-// todo 這段待完成...
-Node *addNewNode(Node *first, int data)
+Node *addLastNode(Node *first, int data)
 {
 	Node *current, *new_node;
 	if (first == NULL)
@@ -79,5 +82,33 @@ Node *addNewNode(Node *first, int data)
 		current->next = new_node;	
 	}
 
+	return first;
+}
+
+Node *deleteLastNode(Node *first){
+	Node *current, *last;
+	if(first == NULL){
+		printf("this list is empty");
+	}else{
+		// last為最後一筆
+		// current為倒數第二筆
+		last = first;
+		current = NULL;
+		while (last->next != NULL)
+		{	
+			current = last;
+			last = last->next;
+		}
+
+		if(current != NULL){
+			// 把倒數第二筆的next改為NULL
+			current->next = NULL;
+		}else{
+			// 如果倒數第二筆為空，代表只有一筆資料，設定為空
+			first = NULL;
+		}
+		// 釋放最後一筆的記憶體位置
+		free(last);
+	}
 	return first;
 }

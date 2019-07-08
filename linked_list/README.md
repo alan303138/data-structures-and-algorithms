@@ -66,8 +66,9 @@ num = 22 //此時表把位置22放到num中，非數字
 * 建立 printList
     * 建立printList的測試
     * 可簡易的建立型態為Node的變數提供測試
-* 建立 createList
-    * 找出最後一項
+* 建立 addLastNode，功能為新增一筆資料在最後一項
+    * 需找出最後一項
+* 建立 deleteLastNode，功能為刪除最後一筆資料
 
 ### 參考資料
 * [單向鏈結串列 Singly Linked List](https://hackersir.gitbooks.io/c/content/Ch11/02_Singly_Linked_List_forC.html)
