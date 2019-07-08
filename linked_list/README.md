@@ -69,6 +69,13 @@ num = 22 //此時表把位置22放到num中，非數字
 * 建立 addLastNode，功能為新增一筆資料在最後一項
     * 需找出最後一項
 * 建立 deleteLastNode，功能為刪除最後一筆資料
+    * 記得處理如果只有處理只有一筆的情形
+* 建立 addFirstNode，
+    * 可擴展為建立新增資料到第n筆
+* 刪除第n筆資料
+* 刪除第一筆定data的資料
+* 刪除所有list
+* 反轉資料
 
 ### 參考資料
 * [單向鏈結串列 Singly Linked List](https://hackersir.gitbooks.io/c/content/Ch11/02_Singly_Linked_List_forC.html)
@@ -76,3 +83,4 @@ num = 22 //此時表把位置22放到num中，非數字
 * [C語言 鏈結串列(link list)的實作範例](https://lakesd6531.pixnet.net/blog/post/329288496-c%E8%AA%9E%E8%A8%80-%E9%8F%88%E7%B5%90%E4%B8%B2%E5%88%97(link-list)%E7%9A%84%E5%AF%A6%E4%BD%9C%E7%AF%84%E4%BE%8B) 非常實用的範例
 
 * [[C 語言] 程式設計教學：如何使用結構 (Struct)](https://michaelchen.tech/c-prog/struct/)
+* [Linked List: Intro(簡介)](http://alrightchiu.github.io/SecondRound/linked-list-introjian-jie.html)

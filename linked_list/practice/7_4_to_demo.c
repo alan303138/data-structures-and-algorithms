@@ -15,6 +15,8 @@ Node *addLastNode(Node *, int);
 
 Node *deleteLastNode(Node *);
 
+Node *deleteFirstNode(Node *);
+
 int main()
 {
 	// 此錯誤要找出來
@@ -33,6 +35,8 @@ int main()
 	first = addLastNode(first, 1);
 	printList(first);
 	first = deleteLastNode(first);
+	printList(first);
+	first = deleteFirstNode(first);
 	printList(first);
 	return 0;
 }
@@ -109,6 +113,23 @@ Node *deleteLastNode(Node *first){
 		}
 		// 釋放最後一筆的記憶體位置
 		free(last);
+	}
+	return first;
+}
+
+Node *deleteFirstNode(Node *first){
+	Node *current;
+	if(first == NULL){
+		printf("this list is empty");
+	}else{
+		current = first;
+		if(first->next != NULL){
+			first = first->next;
+		}else{
+			first = NULL;
+		}
+		// todo 目前無法free()待找原因
+		// free(current);
 	}
 	return first;
 }
