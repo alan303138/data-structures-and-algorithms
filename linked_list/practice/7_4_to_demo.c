@@ -19,28 +19,35 @@ Node *addFirstNode(Node *, int);
 
 Node *deleteFirstNode(Node *);
 
+Node *clearList(Node *);
+
+Node *ReverseList(Node *);
+
 int main()
 {
-	// 此錯誤要找出來
-	Node *first, *node;
+	Node *first;
 
-	Node a, b, c;
-	first = &a;
+	// Node a, b, c;
+	// first = &a;
+	// a.data = 12;
+	// a.next = &b;
+	// b.data = 30;
+	// b.next = &c;
+	// c.data = 50;
+	// c.next = NULL;
 
-	a.data = 12;
-	a.next = &b;
-	b.data = 30;
-	b.next = &c;
-	c.data = 50;
-	c.next = NULL;
-	printList(first);
+	first = NULL;
 	first = addLastNode(first, 1);
+	first = addLastNode(first, 2);
+	first = addLastNode(first, 3);
 	printList(first);
 	first = deleteLastNode(first);
 	printList(first);
 	first = deleteFirstNode(first);
 	printList(first);
 	first = addFirstNode(first, 7);
+	printList(first);
+	first = clearList(first);
 	printList(first);
 	return 0;
 }
@@ -145,8 +152,24 @@ Node *deleteFirstNode(Node *first){
 		}else{
 			first = NULL;
 		}
-		// todo 目前無法free()待找原因
-		// free(current);
+		// 只有用malloc()處理的才能用free
+		free(current);
 	}
 	return first;
+}
+
+Node *clearList(Node *first){
+	Node *current, *deleteNode;
+	if(first == NULL){
+		printf("this list is empty");
+	}else{
+		current = first;
+		while(current != NULL){
+			deleteNode = current;
+			current = current->next;
+			// 只有用malloc()處理的才能用free
+			free(deleteNode);
+		}
+	}
+	return NULL;
 }

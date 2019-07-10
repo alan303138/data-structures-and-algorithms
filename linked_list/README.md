@@ -77,6 +77,9 @@ num = 22 //此時表把位置22放到num中，非數字
 * 刪除所有list
 * 反轉資料
 
+### 常見問題
+* [What does “pointer being freed was not allocated” mean exactly?](https://stackoverflow.com/questions/13148119/what-does-pointer-being-freed-was-not-allocated-mean-exactly) 只有用malloc處理過的變數才能free()
+
 ### 參考資料
 * [單向鏈結串列 Singly Linked List](https://hackersir.gitbooks.io/c/content/Ch11/02_Singly_Linked_List_forC.html)
 * [JS 資料結構 linked-list](https://medium.com/@nicehorse06/javascript-algorithms-linked-list-b0f80e49a5c6)
