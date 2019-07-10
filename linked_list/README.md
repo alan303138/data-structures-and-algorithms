@@ -70,10 +70,10 @@ num = 22 //此時表把位置22放到num中，非數字
     * 需找出最後一項
 * 建立 deleteLastNode，功能為刪除最後一筆資料
     * 記得處理如果只有處理只有一筆的情形
-* 建立 addFirstNode，
+* 建立 addFirstNode
     * 可擴展為建立新增資料到第n筆
-* 刪除第n筆資料
-* 刪除第一筆定data的資料
+* 建立 deleteFirstNode
+    * 可擴展為刪除第n筆資料
 * 刪除所有list
 * 反轉資料
 

@@ -15,6 +15,8 @@ Node *addLastNode(Node *, int);
 
 Node *deleteLastNode(Node *);
 
+Node *addFirstNode(Node *, int);
+
 Node *deleteFirstNode(Node *);
 
 int main()
@@ -37,6 +39,8 @@ int main()
 	first = deleteLastNode(first);
 	printList(first);
 	first = deleteFirstNode(first);
+	printList(first);
+	first = addFirstNode(first, 7);
 	printList(first);
 	return 0;
 }
@@ -115,6 +119,19 @@ Node *deleteLastNode(Node *first){
 		free(last);
 	}
 	return first;
+}
+
+Node *addFirstNode(Node *first, int data){
+	Node *current;
+	if(first == NULL){
+		printf("this list is empty");
+		return first;
+	}else{
+		current = (Node*)malloc(sizeof(Node));
+		current->data = data;
+		current->next = first;
+		return current;
+	}
 }
 
 Node *deleteFirstNode(Node *first){
