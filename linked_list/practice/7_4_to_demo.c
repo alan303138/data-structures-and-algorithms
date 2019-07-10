@@ -21,7 +21,7 @@ Node *deleteFirstNode(Node *);
 
 Node *clearList(Node *);
 
-Node *ReverseList(Node *);
+Node *reverseList(Node *);
 
 int main()
 {
@@ -74,15 +74,15 @@ Node *addLastNode(Node *first, int data)
 {
 	Node *current, *new_node;
 	if (first == NULL)
-	{	
+	{
 		// 先建立一個new node再把資料放到first
-		new_node = (Node *)malloc(sizeof(Node)); 
+		new_node = (Node *)malloc(sizeof(Node));
 		new_node->data = data;
 		new_node->next = NULL;
-		first = new_node; 
+		first = new_node;
 	}
 	else
-	{	
+	{
 		// 找出最後一項，並帶入值
 		current = first;
 		while (current->next != NULL)
@@ -94,31 +94,38 @@ Node *addLastNode(Node *first, int data)
 		new_node->data = data;
 		new_node->next = NULL;
 		// 把新的Node放到最後一項的下一個，成為新的最後一項
-		current->next = new_node;	
+		current->next = new_node;
 	}
 
 	return first;
 }
 
-Node *deleteLastNode(Node *first){
+Node *deleteLastNode(Node *first)
+{
 	Node *current, *last;
-	if(first == NULL){
+	if (first == NULL)
+	{
 		printf("this list is empty");
-	}else{
+	}
+	else
+	{
 		// last為最後一筆
 		// current為倒數第二筆
 		last = first;
 		current = NULL;
 		while (last->next != NULL)
-		{	
+		{
 			current = last;
 			last = last->next;
 		}
 
-		if(current != NULL){
+		if (current != NULL)
+		{
 			// 把倒數第二筆的next改為NULL
 			current->next = NULL;
-		}else{
+		}
+		else
+		{
 			// 如果倒數第二筆為空，代表只有一筆資料，設定為空
 			first = NULL;
 		}
@@ -128,28 +135,39 @@ Node *deleteLastNode(Node *first){
 	return first;
 }
 
-Node *addFirstNode(Node *first, int data){
+Node *addFirstNode(Node *first, int data)
+{
 	Node *current;
-	if(first == NULL){
+	if (first == NULL)
+	{
 		printf("this list is empty");
 		return first;
-	}else{
-		current = (Node*)malloc(sizeof(Node));
+	}
+	else
+	{
+		current = (Node *)malloc(sizeof(Node));
 		current->data = data;
 		current->next = first;
 		return current;
 	}
 }
 
-Node *deleteFirstNode(Node *first){
+Node *deleteFirstNode(Node *first)
+{
 	Node *current;
-	if(first == NULL){
+	if (first == NULL)
+	{
 		printf("this list is empty");
-	}else{
+	}
+	else
+	{
 		current = first;
-		if(first->next != NULL){
+		if (first->next != NULL)
+		{
 			first = first->next;
-		}else{
+		}
+		else
+		{
 			first = NULL;
 		}
 		// 只有用malloc()處理的才能用free
@@ -158,13 +176,18 @@ Node *deleteFirstNode(Node *first){
 	return first;
 }
 
-Node *clearList(Node *first){
+Node *clearList(Node *first)
+{
 	Node *current, *deleteNode;
-	if(first == NULL){
+	if (first == NULL)
+	{
 		printf("this list is empty");
-	}else{
+	}
+	else
+	{
 		current = first;
-		while(current != NULL){
+		while (current != NULL)
+		{
 			deleteNode = current;
 			current = current->next;
 			// 只有用malloc()處理的才能用free
@@ -172,4 +195,30 @@ Node *clearList(Node *first){
 		}
 	}
 	return NULL;
+}
+
+Node *reverseList(Node *first)
+{
+	Node *pre=NULL, *current=first, *next=NULL;
+	if (first == NULL)
+	{
+		printf("this list is empty");
+	}
+	else if (first->next == NULL)
+	{
+		printf("only one data, don't need reverse");
+	}
+	else
+	{
+		current = first->next;
+		first->next = NULL;
+		while (current->next != NULL)
+		{		
+			// reverse todo...
+			// next_node = current->next;
+			// next_node->next = current;
+			// current = next_node->next;
+		}
+	}
+	return first;
 }
