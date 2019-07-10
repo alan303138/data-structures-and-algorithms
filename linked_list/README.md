@@ -76,6 +76,7 @@ num = 22 //此時表把位置22放到num中，非數字
     * 可擴展為刪除第n筆資料
 * 刪除所有list
 * 反轉資料
+    * 反轉資料比較難，需要三個變數處理
 
 ### 常見問題
 * [What does “pointer being freed was not allocated” mean exactly?](https://stackoverflow.com/questions/13148119/what-does-pointer-being-freed-was-not-allocated-mean-exactly) 只有用malloc處理過的變數才能free()

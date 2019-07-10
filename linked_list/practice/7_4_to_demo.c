@@ -41,12 +41,19 @@ int main()
 	first = addLastNode(first, 2);
 	first = addLastNode(first, 3);
 	printList(first);
+
+	first = reverseList(first);
+	printList(first);
+
 	first = deleteLastNode(first);
 	printList(first);
+
 	first = deleteFirstNode(first);
 	printList(first);
+
 	first = addFirstNode(first, 7);
 	printList(first);
+
 	first = clearList(first);
 	printList(first);
 	return 0;
@@ -204,21 +211,24 @@ Node *reverseList(Node *first)
 	{
 		printf("this list is empty");
 	}
-	else if (first->next == NULL)
-	{
-		printf("only one data, don't need reverse");
-	}
 	else
 	{
-		current = first->next;
-		first->next = NULL;
-		while (current->next != NULL)
-		{		
-			// reverse todo...
-			// next_node = current->next;
-			// next_node->next = current;
-			// current = next_node->next;
+		while (current != NULL)
+		{	
+			// 此方法處理掉了 first->next == NULL的問題 
+
+			// 做反轉前先儲存下一筆資料
+			next = current->next;
+
+			// 反轉指標
+			current->next = pre;
+
+			// 為下一筆資料處理做準備
+			pre = current;
+			current = next;
 		}
+		// 如果因current為NULL結束迴圈，代表pre為最後一筆資料，因pre->next為current
+		first = pre;
 	}
 	return first;
 }
