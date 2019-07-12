@@ -5,8 +5,13 @@ stack為後進先出,Last in first out
 * pop ()，Pop: Removes an item from the stack. The items are popped in the reversed order in which they are pushed. If the stack is empty, then it is said to be an Underflow condition.
 * peek()，peekPeek or Top: Returns top element of stack.
 * isEmpty()，isEmpty: Returns true if stack is empty, else false
+* isFull()
 
 array版本可先設定滿為10，滿也是一個邊界條件
+
+### 可解決問題
+* 判斷是否為 Palindrome
+* 編譯器中判斷符號有沒有對稱如`'`,`()`,`{}`
 
 array實作參考文章
 * [C infinite loop when char input instead of int](https://stackoverflow.com/questions/53056369/c-infinite-loop-when-char-input-instead-of-int)
