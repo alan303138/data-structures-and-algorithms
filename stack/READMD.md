@@ -9,9 +9,12 @@ stack為後進先出,Last in first out
 
 array版本可先設定滿為10，滿也是一個邊界條件
 
-### 可解決問題
+### 可解決的應用
 * 判斷是否為 Palindrome
 * 編譯器中判斷符號有沒有對稱如`'`,`()`,`{}`
+* 把infix 轉為 postfix表達式
+	* postfix的優點為`沒有括號`、`用stack幫忙很容易算出結果`
+* 迷宮問題，儲存遇到岔路的資訊，需要先進後出
 
 array實作參考文章
 * [C infinite loop when char input instead of int](https://stackoverflow.com/questions/53056369/c-infinite-loop-when-char-input-instead-of-int)
