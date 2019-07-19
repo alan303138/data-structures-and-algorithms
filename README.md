@@ -2,8 +2,13 @@
 
 ## 目前學習todo
 * queue
-* linked list
+	* by array
+	* by linked list
 * stack
+	* by linked list
+* linked list
+	* doubly linked list
+	* Recycling
 
 ## 學習資源
 ### 教學網站
