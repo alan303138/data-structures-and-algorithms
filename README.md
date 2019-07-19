@@ -26,6 +26,8 @@
 
 * [以Python實作資料結構](https://super9.space/archives/1105)
 
+* [演算法筆記](http://www.csie.ntnu.edu.tw/~u91029/index.html)
+
 ### 教學youtube頻道
 * [mycodeschool](https://www.youtube.com/channel/UClEEsT7DkdVO_fkrBw0OTrA) 外國網友推薦的資料結構學習頻道
 
