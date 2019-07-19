@@ -10,6 +10,10 @@
 	* doubly linked list
 	* Recycling
 
+* 台大PPT
+	* performance evaluation
+	* string matching 
+
 ## 學習資源
 ### 教學網站
 * [Data Structure and Algorithms Tutorial](https://www.tutorialspoint.com/data_structures_algorithms/) tutorialspoint 有各種語言和演算法的教學網站
