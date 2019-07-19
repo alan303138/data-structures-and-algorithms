@@ -25,8 +25,8 @@ Node *deleteFirstNode(Node *);
 Node *clearList(Node *);
 // 反轉list
 Node *reverseList(Node *);
-// todo 找到一個值為int data的node，並回傳
-Node *searchNode(Node *, int);
+// 找到一個值為int data的node，並列印位置
+void searchNode(Node *, int);
 
 int main()
 {
@@ -49,6 +49,8 @@ int main()
 
 	first = addFirstNode(first, 7);
 	printList(first);
+
+	searchNode(first, 7);
 
 	first = clearList(first);
 	printList(first);
@@ -227,4 +229,22 @@ Node *reverseList(Node *first)
 		first = pre;
 	}
 	return first;
+}
+
+void searchNode(Node *head, int data){
+	if(head==NULL){
+		printf("this list is empty\n");
+	}else{
+		Node *tmp;
+		int counter=0;
+		for(tmp=head; tmp!=NULL; tmp=tmp->next){
+			counter++;
+			if(tmp->data == data){
+				printf("the node is in position %d\n", counter);
+				return;
+			}
+		}
+		printf("can not find the data in list\n");
+	}
+	return;
 }
