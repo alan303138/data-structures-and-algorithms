@@ -1,5 +1,5 @@
 #include <stdlib.h>
-
+#include <stdio.h>
 // 參考自 蔡穆欣教授資結與演算法網站
 
 struct ArrayStack{
