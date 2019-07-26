@@ -8,7 +8,7 @@ struct ArrayStack{
 	int *array;
 };
 
-struct ArrayStask *CreateStack()
+struct ArrayStack *CreateStack()
 {
 	// 初始化一個指標
 	struct ArrayStack *S = malloc(sizeof(struct ArrayStack));
