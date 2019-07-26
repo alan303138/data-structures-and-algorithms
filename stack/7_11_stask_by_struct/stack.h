@@ -8,13 +8,13 @@ struct ArrayStack{
 	int *array;
 };
 
-struct ArrayStack *CreateStack()
+struct ArrayStack *CreateStack(int capacity)
 {
 	// 初始化一個指標
 	struct ArrayStack *S = malloc(sizeof(struct ArrayStack));
 	if (!S) return NULL;
 	// capacity記錄tack的最大容量
-	S->capacity=4;
+	S->capacity=capacity;
 	// top紀錄task目前容量
 	S->top=-1;
 	// 給定array一個大小的位置，大小為容量乘上數字格式的大小
@@ -34,7 +34,7 @@ int IsFullStack(struct ArrayStack *S){
 
 void Push(struct ArrayStack*S, int data){
 	if(IsFullStack(S))
-		printf("Stack Overflow");
+		printf("Stack Overflow\n");
 	else
 		//先增加一筆top記錄，再記錄該top的位置
 		S->array[++S->top] = data;
@@ -42,7 +42,7 @@ void Push(struct ArrayStack*S, int data){
 
 int Pop(struct ArrayStack *S){
 	if(IsEmptyStask(S)){
-		printf("Stack is Empty");
+		printf("Stack is Empty\n");
 		return 0;
 	}else
 	{	
@@ -50,4 +50,30 @@ int Pop(struct ArrayStack *S){
 		return (S->array[S->top--]);
 	}
 	
+}
+
+//列印出Stack的資料，從Bottom到Top
+void PrintStack(struct ArrayStack *S){
+	if(IsEmptyStask(S)){
+		printf("Stack is Empty\n");
+	}else{
+		int i;
+		printf("Stack Data from bottom to top:\n");
+		for(i=0; i<=S->top; i++){
+			printf("%d ", S->array[i]);
+		}
+	}
+	printf("\n");
+}
+
+// 查看Top的資料
+void Peak(struct ArrayStack *S){
+		if(IsEmptyStask(S)){
+		printf("Stack is Empty\n");
+	}else{
+		int i;
+		printf("Top of Stack is:\n");
+		printf("%d ", S->array[S->top]);
+	}
+	printf("\n");
 }
