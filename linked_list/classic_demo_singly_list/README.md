@@ -1,0 +1,1 @@
+此範例為最經典linked list demo

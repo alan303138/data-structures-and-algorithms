@@ -28,35 +28,7 @@ Node *reverseList(Node *);
 // 找到一個值為int data的node，並列印位置
 void searchNode(Node *, int);
 
-int main()
-{
-	Node *first;
-
-	first = NULL;
-	first = addLastNode(first, 1);
-	first = addLastNode(first, 2);
-	first = addLastNode(first, 3);
-	printList(first);
-
-	first = reverseList(first);
-	printList(first);
-
-	first = deleteLastNode(first);
-	printList(first);
-
-	first = deleteFirstNode(first);
-	printList(first);
-
-	first = addFirstNode(first, 7);
-	printList(first);
-
-	searchNode(first, 7);
-
-	first = clearList(first);
-	printList(first);
-	return 0;
-}
-
+// 帶入第一項，列印出整個串列
 void printList(Node *first)
 {
 	Node *cuttent = first;
@@ -75,6 +47,7 @@ void printList(Node *first)
 	}
 }
 
+// 帶入第一項，在尾項加一個node
 Node *addLastNode(Node *first, int data)
 {
 	Node *current, *new_node;
@@ -105,6 +78,7 @@ Node *addLastNode(Node *first, int data)
 	return first;
 }
 
+// 帶入第一項，刪除最後一項
 Node *deleteLastNode(Node *first)
 {
 	Node *current, *last;
@@ -140,6 +114,7 @@ Node *deleteLastNode(Node *first)
 	return first;
 }
 
+// 新增一筆到第一項
 Node *addFirstNode(Node *first, int data)
 {
 	Node *current;
@@ -157,6 +132,7 @@ Node *addFirstNode(Node *first, int data)
 	}
 }
 
+// 刪除第一項
 Node *deleteFirstNode(Node *first)
 {
 	Node *current;
@@ -181,6 +157,7 @@ Node *deleteFirstNode(Node *first)
 	return first;
 }
 
+// 刪除全部list
 Node *clearList(Node *first)
 {
 	Node *current, *deleteNode;
@@ -202,6 +179,7 @@ Node *clearList(Node *first)
 	return NULL;
 }
 
+// 反轉list
 Node *reverseList(Node *first)
 {
 	Node *pre=NULL, *current=first, *next=NULL;
@@ -231,6 +209,7 @@ Node *reverseList(Node *first)
 	return first;
 }
 
+// 找到一個值為int data的node，並列印位置
 void searchNode(Node *head, int data){
 	if(head==NULL){
 		printf("this list is empty\n");
