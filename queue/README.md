@@ -6,6 +6,7 @@ Queue為先進先出 類似排隊
 * Add, or EnQueue: add an element
 * Is it empty?
 * Is it full?
+* view all data
 
 可假想一陣列兩端為front端和rear端
 * 每次加入都加在rear端
