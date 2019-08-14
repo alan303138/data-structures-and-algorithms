@@ -1,5 +1,9 @@
 Queue為先進先出 類似排隊
 
+todo 
+* circle queue
+* linked list queue
+
 要做的方法有
 * Initialize a queue
 * Delete, or DeQueue: take an element
