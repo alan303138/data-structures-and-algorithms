@@ -67,9 +67,10 @@ void list_cq(void)
 		printf("the queue is empty\n");
 	}
 	else
-	{	
+	{	// i為front的代替數字，如果超過MAX要求餘數
 		int i=(front+1)%MAX, end=rear; 
 		if(i > end){
+			// 如果end比i小，就加上一個圈圈MAX的大小，還原end應該有的樣子
 			end = end + MAX;
 		}
 		printf("[Front] -> ");
