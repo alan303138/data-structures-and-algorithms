@@ -1,9 +1,9 @@
 #include <stdio.h>
+#define MAX 10
 
 // 此範例為多一個變數tag來記錄是否滿了的circle queue
 // 多個一個tag記錄狀態，可多利用一個空間
 
-#define MAX 2
 
 void enqueue(void);
 void dequeue(void);
