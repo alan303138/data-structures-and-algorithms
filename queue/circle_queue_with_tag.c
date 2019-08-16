@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-// 此範例為最普通的circle queue
-// 沒有tag來記錄是否滿記錄，會浪費掉一個空間
+// 此範例為多一個變數tag來記錄是否滿了的circle queue
+// 多個一個tag記錄狀態，可多利用一個空間
 
 #define MAX 2
 
