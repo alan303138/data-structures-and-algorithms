@@ -3,6 +3,9 @@
 
 // 此範例為多一個變數tag來記錄是否滿了的circle queue
 // 多個一個tag記錄狀態，可多利用一個空間
+// tag的存在是為了區別 rear == front時，到底是空間已滿，還是沒有資料
+// tag = 1表示空間已滿，會限制enqueue
+// tag = 0代表沒有資料，會限制dequeue
 
 
 void enqueue(void);
@@ -24,9 +27,9 @@ int main()
 };
 
 void enqueue(void)
-{
-	// front == rear 代表繞了一圈，尾碰到首
-	if (front == rear && tag == 1)
+{	
+	// 只有這種狀況才是空間已滿
+ 	if (front == rear && tag == 1)
 	{
 		printf("circle queue is full\n");
 	}
@@ -55,7 +58,7 @@ void dequeue(void)
 		front = (front + 1) % MAX;
 		printf("pop the data: %s\n", cq[front]);
 		if(front == rear){
-			// todo 再好好體會 tag 的功能
+			// 如果拿掉一項後front == rear代表已經沒有資料輸入tag = 0
 			tag = 0;
 		}
 	}
