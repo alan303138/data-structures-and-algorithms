@@ -3,7 +3,7 @@
 // 此範例為最普通的circle queue
 // 沒有tag來記錄是否滿記錄，會浪費掉一個空間
 
-#define MAX 10
+#define MAX 2
 
 void enqueue(void);
 void dequeue(void);
@@ -11,7 +11,7 @@ void list_cq(void);
 
 char cq[MAX][10];
 
-int front = MAX - 1, rear = MAX - 1;
+int front = MAX - 1, rear = MAX - 1, tag = 0;
 
 int main()
 {
@@ -25,33 +25,27 @@ int main()
 
 void enqueue(void)
 {
-	// 在circle中，第MAX的位置就是第0個位置，rear必須對MAX求餘數
-	rear = (rear + 1) % MAX;
 	// front == rear 代表繞了一圈，尾碰到首
-	if (front == rear)
+	if (front == rear && tag == 1)
 	{
-		// rear要往前退一個數字
-		if (rear == 0)
-		{
-			// rear為零，要特別處理，退到MAX-1
-			rear = MAX - 1;
-		}
-		else
-		{
-			rear = rear - 1;
-		}
 		printf("circle queue is full\n");
 	}
 	else
-	{
+	{	
+		// 在circle中，第MAX的位置就是第0個位置，rear必須對MAX求餘數
+		rear = (rear + 1) % MAX;
 		printf("input the item:");
 		scanf("%s", cq[rear]);
+		if(front == rear){
+			// 如果加入一項後，front == rear，代表已滿，記錄到tag為1
+			tag = 1;
+		}
 	}
 };
 
 void dequeue(void)
 {
-	if (front == rear)
+	if (front == rear && tag == 0)
 	{
 		printf("the queue is empty\n");
 	}
@@ -60,6 +54,10 @@ void dequeue(void)
 		// 在circle中，第MAX的位置就是第0個位置，front必須對MAX求餘數
 		front = (front + 1) % MAX;
 		printf("pop the data: %s\n", cq[front]);
+		if(front == rear){
+			// todo 再好好體會 tag 的功能
+			tag = 0;
+		}
 	}
 };
 
