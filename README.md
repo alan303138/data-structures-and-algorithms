@@ -9,6 +9,7 @@
 * linked list
 	* doubly linked list
 	* Recycling
+* tree
 * 台大 蔡穆欣教授資結與演算法網站 PPT
 	* sorting
 	
