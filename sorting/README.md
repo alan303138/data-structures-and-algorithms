@@ -6,6 +6,7 @@
 * [wiki qsort](https://en.wikipedia.org/wiki/Qsort)
 * [geeksforgeeks Sorting Algorithms](https://www.geeksforgeeks.org/sorting-algorithms/)
 * [義首大學排序網頁](http://spaces.isu.edu.tw/upload/18833/3/web/sorting.htm)
+* [台大PPT](https://www.csie.ntu.edu.tw/~hsinmu/courses/_media/dsa_17spring/sorting_1.pdf)
 
 ## 所有排序整理
 * todo 
@@ -75,3 +76,36 @@
 * 故`best-case`, `worst-case`, `average-case` 皆為O(n^2)
 * Not adaptive
 * In-place
+
+## Insertion Sort
+* 此sort為建立一個被搜尋過的序列，再一筆一筆把新資料夾入到適合的位置
+### 作法
+1. 從第一個元素開始，該元素可以認為已經被排序
+2. 取出下一個元素，在已經排序的元素序列中從後向前掃描
+3. 如果該元素（已排序）大於新元素，將該元素移到下一位置
+4. 重複步驟3，直到找到已排序的元素小於或者等於新元素的位置
+5. 將新元素插入到該位置後
+6. 重複步驟2~5
+* 參考[wiki 插入排序](https://zh.wikipedia.org/wiki/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F)
+### 分析
+* 總共需要做n次的取新值的動作，並且在sorted list中做平均m次的比較動作
+* 故 worst case為O(n^2)
+* Average-case complexity:O(n^2)，PTT沒說明，todo
+* 一些改善的方法
+	* 用binary search去做位置的插入
+	* 用linked list去儲存資料，這樣插入移動只需要O(1)
+* 優點
+	* 簡單，很適合用在小的list
+	* Stable
+	* In-place
+	* Adaptive
+		* 比如[1,2,5,3,4] ,只需排序[5,3]和[5,4]
+		* 實際的執行時間為O(n+d)，d為順序相反的數量
+		* 所以Best case為O(n)，無任何順序相反
+	* Online
+		* 無需知道所有需要排序的數字
+		* 可以在排序時同時輸入新數字
+		* 等於可以動態排序
+
+## Merge Sort
+* todo 台大PPT
