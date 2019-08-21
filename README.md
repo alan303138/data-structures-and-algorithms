@@ -1,18 +1,18 @@
 # C、python、JS資料結構與演算法實作練習
 
 ## 目前學習todo
+* 持續練習
 * queue
-	* by array
 	* by linked list
 * stack
 	* by linked list
 * linked list
 	* doubly linked list
 	* Recycling
-
-* 台大PPT
-	* performance evaluation
-	* string matching 
+* 台大 蔡穆欣教授資結與演算法網站 PPT
+	* sorting
+	
+* 在看完資料結構前，演算法的內容先列todo，記錄在algorithm.md
 
 ## 學習資源
 ### 教學網站
