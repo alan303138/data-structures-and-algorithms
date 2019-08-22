@@ -12,10 +12,10 @@
 ## 常見的Comparison Sort比較
 name           | Worst  | Average | best | Additional space
 ---------------|:-----:|:-----:| :----:| :----:
-Insertion sort | O(n^2) | O(n^2) | O(n) |
+Insertion sort | O(n^2) | O(n^2) | O(n) | O(1)
 Merge sort    | O(nlog n) | O(nlog n) | O(nlog n) | O(n)
-Quick sort  | O(n^2) | O(nlog n) |  O(nlog n) |    
-Heap sort  | O(nlog n) | O(nlog n) |  O(nlog n) |  
+Quick sort  | O(n^2) | O(nlog n) |  O(nlog n) |  O(1)   
+Heap sort  | O(nlog n) | O(nlog n) |  O(nlog n) |  O(1)
 Selection Sort  | O(n^2) | O(n^2) |  O(n^2) | 
 
 
@@ -118,9 +118,10 @@ Selection Sort  | O(n^2) | O(n^2) |  O(n^2) |
 		* 可以在排序時同時輸入新數字
 		* 等於可以動態排序
 
-## Merge Sort
+## Merge Sort (todo)
 ### 參考資料
 * [Comparison Sort: Merge Sort(合併排序法)](http://alrightchiu.github.io/SecondRound/comparison-sort-merge-sorthe-bing-pai-xu-fa.html)
+* [初學者學演算法｜排序法進階：合併排序法](https://medium.com/appworks-school/%E5%88%9D%E5%AD%B8%E8%80%85%E5%AD%B8%E6%BC%94%E7%AE%97%E6%B3%95-%E6%8E%92%E5%BA%8F%E6%B3%95%E9%80%B2%E9%9A%8E-%E5%90%88%E4%BD%B5%E6%8E%92%E5%BA%8F%E6%B3%95-6252651c6f7e)
 ### 作法
 * Divide-and-Conquer strategy(分治法)
 	* Divide: 把大問題化成小問題
@@ -146,3 +147,25 @@ Selection Sort  | O(n^2) | O(n^2) |  O(n^2) |
 * 不為`in-place`，合併過程需要有O(n)的額外空間
 * Not adaptive
 	
+## Quick Sort (todo)
+### 參考資料
+* [[演算法] 快速排序法(Quick Sort)](http://notepad.yehyeh.net/Content/Algorithm/Sort/Quick/Quick.php)
+### 作法
+* 在數列中挑任一個數稱作`pivot`
+* 調整數列	
+	* 所有在`pivot`左邊的數，都比`pivot`還小
+	* 在`pivot`右邊的數都比`pivot`大
+* 將`pivot`左右的數列視為新的數列
+* `pivot`數列分別重複`選pivot`、`調整數列`的動作，直到分不出新數列為止
+* `pivot`可以任意挑選，可以第一個、最後一個
+* 在新的數列中只是不斷處理`選pivot`、`調整數列`的動作，可用遞迴處理
+* 其中調整數列為`Partition`
+	* todo
+### 分析
+* todo
+
+### Randomized Quick Sort
+* 避免最壞的情況太常發生
+* 跟一般Quick Sort的差別為使用隨機的方式選`pivot`
+
+## Head sorting (todo)

@@ -11,7 +11,8 @@
 	* Recycling
 * tree
 * 台大 蔡穆欣教授資結與演算法網站 PPT
-	* sorting
+	* tree
+	* heap
 	
 * 在看完資料結構前，演算法的內容先列todo，記錄在algorithm.md
 
