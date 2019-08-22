@@ -10,13 +10,13 @@
 
 
 ## 常見的Comparison Sort比較
-name           | Worst  | Average | best  
----------------|:-----:|:-----:| :----:
-Insertion sort | O(n^2) | O(n^2) | O(n) 
-Merge sort    | O(nlog n) | O(nlog n) | O(nlog n)
-Quick sort  | O(n^2) | O(nlog n) |  O(nlog n)    
-Heap sort  | O(nlog n) | O(nlog n) |  O(nlog n)  
-Selection Sort  | O(n^2) | O(n^2) |  O(n^2) 
+name           | Worst  | Average | best | Additional space
+---------------|:-----:|:-----:| :----:| :----:
+Insertion sort | O(n^2) | O(n^2) | O(n) |
+Merge sort    | O(nlog n) | O(nlog n) | O(nlog n) | O(n)
+Quick sort  | O(n^2) | O(nlog n) |  O(nlog n) |    
+Heap sort  | O(nlog n) | O(nlog n) |  O(nlog n) |  
+Selection Sort  | O(n^2) | O(n^2) |  O(n^2) | 
 
 
 ## 所有排序整理
@@ -128,7 +128,21 @@ Selection Sort  | O(n^2) | O(n^2) |  O(n^2)
 	* Combine: 結合小問題的答案變成大問題的答案
 * Merge Sort
 	* Divide: 分解n個數字成為兩個n/2的sub-sequences
+		* 實務上會分到每一個數列剩一個元素
 	* Conquer: 排序兩個sub-sequences (use recursive calls to delegate tothe clones)
 	* Combine: 合併兩個sorted sub-sequences為一個 sorted sequence
 * how to merge
-	* 前提：如果由小數列合併出大數量
+	* 前提：如果由小數列合併出大數列，則小數列必須已經排好序
+	* 從兩個小數列的第一項開始比較，比較小的那一項移到大數列中，不斷重複
+	* 技術上會把小數列的最後一項加上一個無窮大，合併時即可用大小比較是否比到最後一項
+
+### 分析
+* 拆分
+	* 當把長度n的陣列拆成只有一個數字的小陣列時，需要(n-1)個步驟，切了(n-1)刀
+* 合併
+	* 兩個小數列長度為n1和n2，則合併成大數列的時間複雜度為O(n1 + N2) = O(N)
+	* 講義說兩兩合併到最後為需要O(log n)，todo這部分真看不懂
+* 結論總時間為O(nlog n)，todo這部分真看不懂
+* 不為`in-place`，合併過程需要有O(n)的額外空間
+* Not adaptive
+	
