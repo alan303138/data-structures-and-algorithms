@@ -8,6 +8,17 @@
 * [義首大學排序網頁](http://spaces.isu.edu.tw/upload/18833/3/web/sorting.htm)
 * [台大PPT](https://www.csie.ntu.edu.tw/~hsinmu/courses/_media/dsa_17spring/sorting_1.pdf)
 
+
+## 常見的Comparison Sort比較
+name           | Worst  | Average | best  
+---------------|:-----:|:-----:| :----:
+Insertion sort | O(n^2) | O(n^2) | O(n) 
+Merge sort    | O(nlog n) | O(nlog n) | O(nlog n)
+Quick sort  | O(n^2) | O(nlog n) |  O(nlog n)    
+Heap sort  | O(nlog n) | O(nlog n) |  O(nlog n)  
+Selection Sort  | O(n^2) | O(n^2) |  O(n^2) 
+
+
 ## 所有排序整理
 * todo 
 	* 合併排序
@@ -108,4 +119,16 @@
 		* 等於可以動態排序
 
 ## Merge Sort
-* todo 台大PPT
+### 參考資料
+* [Comparison Sort: Merge Sort(合併排序法)](http://alrightchiu.github.io/SecondRound/comparison-sort-merge-sorthe-bing-pai-xu-fa.html)
+### 作法
+* Divide-and-Conquer strategy(分治法)
+	* Divide: 把大問題化成小問題
+	* Conquer: 解決小問題
+	* Combine: 結合小問題的答案變成大問題的答案
+* Merge Sort
+	* Divide: 分解n個數字成為兩個n/2的sub-sequences
+	* Conquer: 排序兩個sub-sequences (use recursive calls to delegate tothe clones)
+	* Combine: 合併兩個sorted sub-sequences為一個 sorted sequence
+* how to merge
+	* 前提：如果由小數列合併出大數量
