@@ -21,3 +21,32 @@
 ### 二元樹編號順序
 * 初步看下去，就是從上到下，從左到右
 * 書上的嚴謹說法，todo
+
+## 樹的定義
+* 為一個或多個node的有線集合
+
+### Tree的名詞
+* 最上面的點稱為root
+* Node/Edge (branch)
+* Degree (of a node):
+	* 該node的subtree數量
+* Leaf/Terminal node
+	* 表degree為零
+* Parent/Children
+* Siblings
+	* 有同一個母節點
+* Ancestors/Descendants
+	* 祖先節點與後裔節點
+* Level/depth (of a node)
+	* 該node要到達root經過的數量
+	* root level 為 0
+* Height (of a tree):
+	* tree的level數量
+* Size (of a tree)
+	* tree的node數量
+* Weight (of a tree):
+	* tree的leaves數量
+* Degree (of a tree):
+	* 該數的node最大的degree
+
+## todo Representing a tree with array
