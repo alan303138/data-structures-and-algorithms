@@ -8,3 +8,5 @@
 	* [分治法和二分法的时间复杂度简明分析](https://blog.csdn.net/qilei2010/article/details/51345278)
 * [廣度優先搜尋 Breadth-First Search BFS](https://zh.wikipedia.org/wiki/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2)
 * [深度優先搜尋 Depth-First-Search，DFS](https://zh.wikipedia.org/wiki/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2)
+* [計數排序（Counting sort）](https://zh.wikipedia.org/wiki/%E8%AE%A1%E6%95%B0%E6%8E%92%E5%BA%8F)
+	* 時間複雜度為n的排序法
