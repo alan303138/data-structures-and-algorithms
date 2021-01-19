@@ -7,6 +7,7 @@
 * stack
 	* by linked list
 * linked list
+	* 新增刪除第N項的功能
 	* doubly linked list
 	* Recycling
 * tree
