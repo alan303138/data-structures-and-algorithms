@@ -8,6 +8,8 @@
 	* by linked list
 * linked list
 	* 新增刪除第N項的功能
+	* 抓出list最後一筆資料的函式可額外抽出來
+	* 獨立出 (Node *)malloc(sizeof(Node)) 為函式
 	* doubly linked list
 	* Recycling
 * tree
