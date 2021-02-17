@@ -25,7 +25,11 @@
 ### Python
 * [30天學演算法和資料結構](https://ithelp.ithome.com.tw/users/20111557/ironman/2110)
 * [資料結構與演算法(使用Python)](https://hackmd.io/@cube/SysqQALcN)
-* [【內附程式碼】工程師技能大全：如何用 Python 寫出所有的演算法？](https://buzzorange.com/techorange/2019/04/29/python-algorithm/)
+* [TheAlgorithms/Python](https://github.com/TheAlgorithms/Python)
+
+### C language
+* [TheAlgorithms/C](https://github.com/TheAlgorithms/C)
+
 ### 教學網站
 * [Data Structure and Algorithms Tutorial](https://www.tutorialspoint.com/data_structures_algorithms/) tutorialspoint 有各種語言和演算法的教學網站
 
