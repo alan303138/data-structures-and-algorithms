@@ -90,3 +90,6 @@ num = 22 //此時表把位置22放到num中，非數字
 
 * [[C 語言] 程式設計教學：如何使用結構 (Struct)](https://michaelchen.tech/c-prog/struct/)
 * [Linked List: Intro(簡介)](http://alrightchiu.github.io/SecondRound/linked-list-introjian-jie.html)
+* [如何建構Linked List](https://mycollegenotebook.medium.com/%E5%A6%82%E4%BD%95%E5%BB%BA%E6%A7%8Blinked-list-4f49604e044a)
+* [Linked List | Set 1 (Introduction) geeksforgeeks](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)
+    * 步驟清楚 有Python和C版本
