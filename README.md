@@ -34,6 +34,7 @@
 * [Data Structure and Algorithms Tutorial](https://www.tutorialspoint.com/data_structures_algorithms/) tutorialspoint 有各種語言和演算法的教學網站
 
 * [GeeksforGeek](https://www.geeksforgeeks.org/) geeksforgeeks 有各種語言和演算法的教學網站
+	* [Linked List | Set 1 (Introduction)](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)
 
 * [trekhleb/javascript-algorithms](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/tree)  JS演算法實作與圖片講解
 
