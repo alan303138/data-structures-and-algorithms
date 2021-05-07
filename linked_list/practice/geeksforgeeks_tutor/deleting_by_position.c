@@ -1,5 +1,5 @@
 // https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/
-// 新增移除指定位置的項目功能
+// 新增移除指定位置的項目功能，todo 目前如果超出list的index會出錯
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -25,22 +25,43 @@ void push(struct Node** head_ref, int new_data){
 
 void deleteNode(struct Node **head_ref, int position){
     // If linked list is empty
+    if(*head_ref == NULL){
+        return;
+    }
 
     // Store head node
+    struct Node* temp = *head_ref;
 
     // If head needs to be removed
+    if(position == 0){
+        *head_ref = temp->next;
+        free(temp);
+        return;
+    }
 
     // Find previous node of the node to be deleted
+    for(int i=0; temp!=NULL && position-1 > i; i++){
+        temp = temp->next;
+    }
+
+    // If position is more than number of nodes
+    if(temp == NULL){
+        return;
+    }
+    // 原本使用方式，我覺得用不到 temp->next == NULL
+    // if(temp == NULL || temp->next == NULL){
+    //     return;
+    // }
 
     // Node temp->next is the node to be deleted
     // Store pointer to the next of node to be deleted
-
-    // If position is more than number of nodes
+    struct Node* next = temp->next->next;
 
     // Unlink the node from linked list
+    free(temp->next);
 
-     // Unlink the deleted node from list
-
+    // Unlink the deleted node from list
+    temp->next = next;
 }
 
 void printList(struct Node *node)

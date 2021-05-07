@@ -1,4 +1,4 @@
 # geeksforgeeks
 
 ## todo
-* [Delete a Linked List node at a given position](https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/)
+* [Write a function to delete a Linked List](https://www.geeksforgeeks.org/write-a-function-to-delete-a-linked-list/)
