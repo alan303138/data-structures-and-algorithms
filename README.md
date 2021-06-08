@@ -51,3 +51,8 @@
 * [[CSIE 1212] Data Structure and Algorithm](https://www.csie.ntu.edu.tw/~hsinmu/courses/dsa_17spring) 蔡穆欣教授資結與演算法網站
 
 * [Algorithm Design and Analysis](https://www.csie.ntu.edu.tw/~yvchen/f107-ada/)陳縕儂教授網站
+### 好書，等資料結構看完，可購買簡體版速看
+* Introduction to Algorithms, 3/e
+ 	* 很像字典
+* Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne
+	* 比較淺，適合新手
