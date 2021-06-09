@@ -1,4 +1,6 @@
-# C、python、JS資料結構與演算法實作練習
+# 資料結構與演算法實作練習
+
+* 目前用 C、python、JS 實作
 
 ## 目前學習todo
 * 持續練習
@@ -43,6 +45,8 @@
 * [以Python實作資料結構](https://super9.space/archives/1105)
 
 * [演算法筆記](http://web.ntnu.edu.tw/~algo/)
+
+* [擁抱「資料結構」的「演算法」](https://ithelp.ithome.com.tw/users/20129841/ironman/3300)
 
 ### 教學youtube頻道
 * [mycodeschool](https://www.youtube.com/channel/UClEEsT7DkdVO_fkrBw0OTrA) 外國網友推薦的資料結構學習頻道
