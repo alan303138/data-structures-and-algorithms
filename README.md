@@ -55,8 +55,17 @@
 * [[CSIE 1212] Data Structure and Algorithm](https://www.csie.ntu.edu.tw/~hsinmu/courses/dsa_17spring) 蔡穆欣教授資結與演算法網站
 
 * [Algorithm Design and Analysis](https://www.csie.ntu.edu.tw/~yvchen/f107-ada/)陳縕儂教授網站
-### 好書，等資料結構看完，可購買簡體版速看
+
+### 書目參考完，可購買簡體版速看
 * Introduction to Algorithms, 3/e
  	* 很像字典
-* Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne
-	* 比較淺，適合新手
+* [白話演算法！培養程式設計的邏輯思考](https://www.tenlong.com.tw/products/9789863126546?list_name=c-algorithms-data-structures)
+* [我的算法学习之路](http://zh.lucida.me/blog/on-learning-algorithms/)
+	* [数据结构与算法分析——C 语言描述](https://www.tenlong.com.tw/products/9789861542737?list_name=rd)
+		* 題目幾乎是面試基本題，很好的資料結構啟蒙書
+	* [算法設計與分析基礎, 3/e (Introduction to the Design and Analysis of Algorithms, 3/e)](https://www.tenlong.com.tw/products/9787302386346)
+		* 好的演算法入門書
+	* [演算法, 4/e (Algorithms, 4/e)](https://www.tenlong.com.tw/products/9787115293800?list_name=rd)
+		* 用大量圖解，有很好的排版，非常適合入門
+		* 比較淺，適合新手
+	* [Algorithm Design Manual 紅皮書](https://www.tenlong.com.tw/products/9787302457343?list_name=trs-t)
