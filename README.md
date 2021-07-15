@@ -69,3 +69,10 @@
 		* 用大量圖解，有很好的排版，非常適合入門
 		* 比較淺，適合新手
 	* [Algorithm Design Manual 紅皮書](https://www.tenlong.com.tw/products/9787302457343?list_name=trs-t)
+		* 天龍有中文版 393
+		* 經典書
+* [[心得] 商科大叔轉Google 軟體工程師](https://www.ptt.cc/bbs/Tech_Job/M.1587612189.A.F36.html?fbclid=IwAR1IL4mfo0hxamG52bBgRf7HrjBgszCGmF1xlatDauf8sCFTX__hXknx_ag)
+	* 用紅皮書準備 
+	* Cracking The Coding Interview
+	* Leetcode
+	
