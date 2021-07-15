@@ -75,4 +75,13 @@
 	* 用紅皮書準備 
 	* Cracking The Coding Interview
 	* Leetcode
+### ref
+* [[請益] 請推薦資料結構與演算法書籍或線上課程](https://www.ptt.cc/bbs/Soft_Job/M.1618962050.A.A94.html
+	* 大話結構／程杰 很棒的資料結構書
+	* 推薦普林斯頓 cs61b 課程可搭配 演算法, 4/e (Algorithms, 4/e)一起使用
+		* [CS61B Data Structures](https://inst.eecs.berkeley.edu/~cs61b/archives.html)，選一個年度，裡面有影片
+		* [Algorithms, Part I](https://www.coursera.org/learn/algorithms-part1)
+		* [Algorithms, Part II](https://www.coursera.org/learn/algorithms-part2)
+	* 軒田資結
+	* 推薦史丹佛 演算法課程
 	
