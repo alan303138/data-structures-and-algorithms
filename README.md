@@ -75,6 +75,9 @@
 	* 用紅皮書準備 
 	* Cracking The Coding Interview
 	* Leetcode
+* 準備要買
+	* [算法設計指南, 2/e (The Algorithm Design Manual, 2/e)](https://www.tenlong.com.tw/products/9787302457343?list_name=trs-t)
+	* [演算法競賽入門經典, 2/e (演算法藝術與信息學競賽) ](https://www.tenlong.com.tw/products/9787302356288?list_name=rd)
 ### ref
 * [[請益] 請推薦資料結構與演算法書籍或線上課程](https://www.ptt.cc/bbs/Soft_Job/M.1618962050.A.A94.html
 	* 大話結構／程杰 很棒的資料結構書
