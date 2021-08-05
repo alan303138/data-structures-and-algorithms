@@ -48,6 +48,9 @@
 
 * [擁抱「資料結構」的「演算法」](https://ithelp.ithome.com.tw/users/20129841/ironman/3300)
 
+* [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
+	* 網友推薦 很初淺的介紹基本資料結構 演算法
+
 ### 教學youtube頻道
 * [mycodeschool](https://www.youtube.com/channel/UClEEsT7DkdVO_fkrBw0OTrA) 外國網友推薦的資料結構學習頻道
 
